@@ -1,0 +1,28 @@
+server:
+  port: 15000
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jorder
+    username: tokoyy
+    password: ehdtnr13!!##
+
+    jpa:
+      # 처리시 발생하는 SQL을 보여줄 것인지 결정
+      show-sql: true
+
+      # create : 매번 테이블 생성을 새로 시도한다 / update : 변경이 필요한 경우 alter로 변경되고 테이블이 없는경우 create가 된다
+      hibernate:
+        ddl-auto: update
+
+      # 실제 JPA 구현체인 Hibernate가 동작하면서 발생하는 SQL을 포맷팅해서 출력한다 -> 실행되는 SQL의 가독성을 높여준다
+      properties:
+        hibernate:
+          format_sql: true
+
+
+
+
+
+
